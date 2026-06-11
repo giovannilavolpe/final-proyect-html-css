@@ -237,6 +237,7 @@ nav .download-button {
     justify-content: center;
     align-items: center;
     margin-top: 20%;
+    overflow: hidden;
 }
 
 .celular-section-one img {
@@ -266,12 +267,11 @@ nav .download-button {
 }
 
 .about-our-app h5 {
-    /* margin: 0;
-    margin-top: 10%; */
     width: 100%;
     text-align: center;
     font-size: 180%;
     font-weight: 400;
+    margin-bottom: 5%;
 }
 
 .about-our-app p {
@@ -279,9 +279,6 @@ nav .download-button {
     color: Gray ;
     text-align: center;
     line-height: 160%;
-    /* margin: 5% 20% 10% 20%;
-    margin-top: 5%;
-    margin-bottom: 10%; */
 }
 
 .about-our-app img {
@@ -289,6 +286,7 @@ nav .download-button {
     height: auto;
     max-width: 100%;
 }
+
 
 /* LISTA DE CARACTERISTICAS DE SECTION TWO */
 
@@ -320,7 +318,97 @@ nav .download-button {
     margin-bottom: 5%;
 }
 
-.svg-inline--fa {
+.features-list .svg-inline--fa {
     margin-top: 4%;
     color: #5956E9;
+}
+
+
+/* SECTION THREE */
+
+
+.section-three * {
+    color: #ffffff;
+}
+
+.app-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.app-features h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.app-features p {
+    width: 100%;
+    text-align: center;
+    line-height: 160%;
+}
+
+/* LISTA SECCION THREE */
+
+.features-section-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three ul {
+    padding-top: 5%;
+    padding-left: 16%;
+    padding-right: 16%;
+}
+
+.section-three li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.first-ul-section-three li:first-child {
+    margin-top: 0;
+}
+
+.second-ul-section-three li:first-child {
+    margin-top: 20%;
+}
+
+
+.section-three .svg-inline--fa {
+    width: 20%;
+    height: 20%;
+}
+
+.features-section-three h6 {
+    font-size: 140%;
+    font-weight: 500;
+    margin: 10% 0;
+    line-height: 140%;
+}
+
+.features-section-three p {
+    line-height: 150%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.celular-section-three {
+    width: 80%;
+    border-radius: 4rem;
+    margin-top: 2%;
 }
