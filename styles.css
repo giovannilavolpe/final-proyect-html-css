@@ -1,4 +1,4 @@
-@id:chat.disableAIFeatures
+/* @id:chat.disableAIFeatures */
 
 * {
     font-family: "Josefin Sans", sans-serif;
@@ -220,6 +220,7 @@ nav .download-button {
 
 .downloadimg img {
     flex: 1 1 45%; 
+    flex-wrap: wrap;
     /* esto aplica una relacion para que las imagenes se ajusten al espacio disponible, manteniendo su proporcion y evitando que se estiren o se compriman demasiado */
     max-width: 45%;
     min-width: 140px;
@@ -248,3 +249,78 @@ nav .download-button {
 
 /* SECTION TWO */
 
+.about-our-app { /* ES EL CONTENEDOR DE LA SECCION TWO, EL QUE CONTIENE EL H5, P Y LA IMAGEN */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px 10%; */
+    gap: 20px;
+}
+
+.text-about-our-app {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.about-our-app h5 {
+    /* margin: 0;
+    margin-top: 10%; */
+    width: 100%;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 400;
+}
+
+.about-our-app p {
+    width: 100%;
+    color: Gray ;
+    text-align: center;
+    line-height: 160%;
+    /* margin: 5% 20% 10% 20%;
+    margin-top: 5%;
+    margin-bottom: 10%; */
+}
+
+.about-our-app img {
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* LISTA DE CARACTERISTICAS DE SECTION TWO */
+
+.section-two ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+    padding: 5% 8%;
+    margin-top: 10%
+}
+
+.features-list li {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.features-text {
+    margin-left: 3%;
+}
+
+.section-two li h6 {
+    font-size: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.svg-inline--fa {
+    margin-top: 4%;
+    color: #5956E9;
+}
