@@ -16,27 +16,46 @@
 
     <section class="section-one">
             <header>
-                <nav>
-                    <div class="barra-nav">
-                        <button class="menu-desplegable" aria-label="Abrir menú">
-                            <i class="fa-solid fa-bars"></i>
-                            
-                        </button>
-                        <ul class="lista-desplegable">
-                                <li><a href="#">MENU</a></li>
-                                <li><a href="#">ABOUT</a></li>
-                                <li><a href="#">FEATURES</a></li>
-                                <li><a href="#">TEAM</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                        </ul>
-                        <div class="logo-nav">
-                            <h1>APPOLLY</h1>
-                            <img src="/images/logo.png" alt="logo">
-                        </div>
-                        <button class="download-button">DOWNLOAD</button>
+                <div class="info-home">
+                    <div class="email-home">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h6>INFO.DESIGN@GMAIL.COM</h6>
                     </div>
-                </nav>
+                    <div class="number-home">
+                        <i class="fa-solid fa-phone"></i>
+                        <h6>+880 321 655 9985</h6>
+                    </div>
+                </div>
+                    <nav>
+                        <div class="barra-nav">
+                            <button class="menu-desplegable" aria-label="Abrir menú">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <ul class="lista-desplegable">
+                                    <li><a href="#home">HOME</a></li>
+                                    <li><a href="#about">ABOUT</a></li>
+                                    <li><a href="#features">FEATURES</a></li>
+                                    <li><a href="#team">TEAM</a></li>
+                                    <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                            <ul class="lista-izq">
+                                <li><a href="#home">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#features">FEATURES</a></li>
+                            </ul>
+                            <div class="logo-nav">
+                                <h1>APPOLLY</h1>
+                                <img src="/images/logo.png" alt="logo">
+                            </div>
+                            <ul class="lista-der">
+                                <li><a href="#team">TEAM</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                            <button class="download-button">DOWNLOAD</button>
+                        </div>
+                    </nav>
             </header>
+<main>
             <div class="content-section-one">
                 <section class="white-box">
                     <h5>A GREAT APP MAKES YOUR LIFE BETTER</h5>
@@ -56,7 +75,7 @@
 
 
 
-    <section class="section-two">
+    <section id="about" class="section-two">
         <div class="about-our-app"> <!--El texto y el titulo de esta seccion -->
             <div class="text-about-our-app">
                 <h5>ABOUT OUR APP</h5>
@@ -95,7 +114,7 @@
 
 
 
-    <section class="section-three">
+    <section id="features" class="section-three">
         <div class="app-features">
             <h5>APP FEATURES</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
@@ -149,7 +168,7 @@
 
 
 
-    <section class="section-four">
+    <section id="team" class="section-four">
         <div class="our-creative-team">
             <h5>OUR CREATIVE TEAM</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
@@ -192,7 +211,7 @@
                 </div>
             </div>
         </section>
-        <section class="box-contacto">
+        <section id="contact" class="box-contacto">
             <div class="content-box-contacto">
                 <div class="email">
                     <i class="fa-solid fa-envelope"></i>
@@ -206,7 +225,7 @@
             </div>
         </section>
     </section>
-
+</main> 
     <footer>
         <section class="footer-elements">
             <div>
@@ -238,11 +257,10 @@
                 </div>
             </div>
         </section>
-        <div>
+        <div class="copyright">
             <hr>
             <p>Copyright 2021 .Ojjomedia. All Right Reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
