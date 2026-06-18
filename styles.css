@@ -81,6 +81,21 @@ nav {
   z-index: 1000;
 }
 
+.barra-nav a{
+    color: #232233;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.barra-nav a:visited {
+    color: #232233;
+}
+
+.barra-nav a:hover {
+    color: #5956e9;
+}
+
 /* MENU DESPLEGABLE */
 
 .menu-desplegable {
@@ -207,11 +222,7 @@ nav .download-button {
 
 .white-box h5 {
   color: royalblue;
-  font-size: clamp(
-    1.6rem,
-    3vw,
-    2.5rem
-  ); /* valor minimo, valor ideal, valor maximo */
+  font-size: clamp(1.6rem, 3vw, 2.5rem); /* valor minimo, valor ideal, valor maximo */
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
   line-height: 1.2;
@@ -293,7 +304,7 @@ nav .download-button {
 .about-our-app h5 {
   width: 100%;
   text-align: center;
-  font-size: 180%;
+  font-size: 200%;
   font-weight: 400;
   margin-bottom: 5%;
 }
@@ -385,8 +396,8 @@ nav .download-button {
 .app-features h5 {
   width: 100%;
   text-align: center;
-  font-size: 180%;
-  font-weight: 400;
+  font-size: 200%;
+  font-weight: 500;
   margin-bottom: 5%;
 }
 
@@ -403,6 +414,9 @@ nav .download-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* ELEMENTOS */
@@ -453,8 +467,8 @@ nav .download-button {
 }
 
 .section-three .svg-inline--fa {
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 15%;
 }
 
 .features-section-three h6 {
@@ -466,7 +480,7 @@ nav .download-button {
 
 .features-section-three p {
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 200;
   padding: 0;
   margin: 0;
 }
@@ -526,8 +540,8 @@ nav .download-button {
 }
 
 .personal-card h5 {
-  font-size: 240%;
-  margin-top: 10%;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  margin-top: 8%;
   margin-bottom: 3%;
   text-align: center;
 }
@@ -640,15 +654,6 @@ footer * {
 
 @media (min-width: 1024px) {
 
-    .info-home {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    color: #ffffff;
-    margin-left: 5%;
-    gap: 5%;
-    }
-
     .nav {
         margin-top: -30px;
     }
@@ -679,6 +684,47 @@ footer * {
 }
 
 @media (min-width: 768px) {
+
+    .info-home {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: #ffffff;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -25px;
+    }
+
+    .email-and-tel {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .email-and-tel * {
+        gap: 20px;
+        font-weight: 300;
+    }
+
+    .icons-home * {
+        margin-left: 10px
+    }
+
+    .info-home a {
+        color: #ffffff;
+    }
+
+    .info-home a:visited {
+        color: #ffffff;
+    }
+
+    .info-home a:hover {
+        color: #000000;
+    }
+
   .section-one {
     min-height: 100vh;
     height: auto;
@@ -705,7 +751,7 @@ footer * {
   .content-section-one {
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: nowrap;
     gap: 2rem;
     padding: 5%;
@@ -763,6 +809,7 @@ footer * {
     justify-content: centerfff;
   }
 
+
   .full-free-chat {
     margin-top: 5%;
     margin-bottom: 0;
@@ -779,6 +826,7 @@ footer * {
     align-items: start;
     margin-top: 30%;
     margin-left: 10%;
+    text-align: start;
   }
 
   .support {
@@ -849,12 +897,3 @@ footer * {
   }
 }
 
-@media (max-width: 768px) {
-  .content-section-one {
-    margin-top: 15%;
-  }
-
-  .personal-card {
-    max-height: 580px;
-  }
-}
