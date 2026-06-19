@@ -223,14 +223,14 @@ nav .download-button {
   position: absolute;
   top: -5%;
   left: 5%;
-  width: 94%;
+  width: 98%;
   height: 110%;
   border: 8px solid rgba(255, 255, 255, 0.18);
   z-index: -1;
 }
 
 .white-box h5 {
-  color: royalblue;
+  color: #5956E9;
   font-size: clamp(1.6rem, 3vw, 2.5rem); /* valor minimo, valor ideal, valor maximo */
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
@@ -662,6 +662,22 @@ nav .download-button {
     height: 40px;
 }
 
+.icon-contact:hover {
+  background-color: #000000;
+}
+
+.icon-contact a {
+  color: white;
+}
+
+.icon-contact a:visited {
+  color: #ffffff;
+}
+
+.icon-contact a:hover {
+  color: #5956e9
+}
+
 /* FOOTER */
 
 footer {
@@ -929,6 +945,7 @@ footer h4 {
 
   .white-box::before {
     border-width: 12px;
+    width: 100%;
   }
 
   .celular-section-one {
